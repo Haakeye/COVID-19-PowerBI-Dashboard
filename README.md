@@ -1,4 +1,4 @@
-﻿# COVID-19 Global Intelligence Dashboard
+# COVID-19 Global Intelligence Dashboard
 
 
 
@@ -94,7 +94,7 @@ erDiagram
         Int Confirmed
         Int Deaths
     }
-\\\
+```
 
 **Relationships:**
 1. DateTable[Date] -> CovidOverTime[Date] (One-to-Many)
