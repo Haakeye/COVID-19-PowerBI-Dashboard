@@ -1,6 +1,6 @@
-﻿# COVID-19 Global Intelligence Dashboard
+# COVID-19 Global Intelligence Dashboard
 
-> **Note:** Dashboard screenshots will be added here soon.
+
 
 ## Power BI Project Report
 
@@ -62,13 +62,15 @@ Johns Hopkins Center for Systems Science and Engineering (CSSE) COVID-19 dataset
 - Country, Latitude, Longitude, Total Confirmed, Deaths, Recovered, Active, ISO 3
 
 ### Data Challenge Identified
-The \ecovered\ and \ctive\ columns in the time-series dataset (CovidOverTime) were **completely empty** across all 23,814 rows. Recovery data was only available in the country summary table (CovidByCountry). DAX measures were designed accordingly to reference the correct source table.
+The \ecovered\ and \ ctive\ columns in the time-series dataset (CovidOverTime) were **completely empty** across all 23,814 rows. Recovery data was only available in the country summary table (CovidByCountry). DAX measures were designed accordingly to reference the correct source table.
 
 ---
 
 ## 4. Data Model (Star Schema)
 
-\\\mermaid
+![Data Model](data_model.jpg)
+
+```mermaid
 erDiagram
     DateTable ||--o{ CovidOverTime : "filters by Date"
     CovidByCountry ||--o{ CovidOverTime : "filters by Country"
@@ -129,6 +131,9 @@ erDiagram
 | Top 10 Countries | Horizontal Bar | Countries with highest case counts (US leads at 36M+) |
 
 ### Page 2 - Global Trend Analysis
+
+![Trends Dashboard](2.jpg)
+
 **Purpose:** Show how the pandemic evolved over time with analytical depth.
 
 | Visual | Type | What It Shows |
@@ -139,6 +144,9 @@ erDiagram
 | Date Slicer | Slicer (Between) | Interactive date range selection |
 
 ### Page 3 - Country Intelligence
+
+![Country Dashboard](3.jpg)
+
 **Purpose:** Interactive drill-down into individual countries.
 
 | Visual | Type | What It Shows |
@@ -149,6 +157,9 @@ erDiagram
 | Data Table | Table | Detailed country breakdown with all metrics |
 
 ### Page 4 - Mortality & Recovery
+
+![Mortality Dashboard](4.jpg)
+
 **Purpose:** Deep comparative analysis of mortality and recovery patterns.
 
 | Visual | Type | What It Shows |
@@ -158,6 +169,9 @@ erDiagram
 | Matrix Table | Matrix | Full country comparison with conditional formatting |
 
 ### Page 5 - Insights & Recommendations
+
+![Insights Dashboard](5.jpg)
+
 **Purpose:** Summarize findings and provide actionable recommendations.
 
 - Project overview and methodology
