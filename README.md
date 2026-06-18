@@ -1,4 +1,4 @@
-# COVID-19 Global Intelligence Dashboard
+﻿# COVID-19 Global Intelligence Dashboard
 
 
 
@@ -132,7 +132,7 @@ erDiagram
 
 ### Page 2 - Global Trend Analysis
 
-![Trends Dashboard](2.jpg)
+![Trends Dashboard](trends.jpg)
 
 **Purpose:** Show how the pandemic evolved over time with analytical depth.
 
@@ -145,7 +145,7 @@ erDiagram
 
 ### Page 3 - Country Intelligence
 
-![Country Dashboard](3.jpg)
+![Country Dashboard](country_intelligence.jpg)
 
 **Purpose:** Interactive drill-down into individual countries.
 
@@ -158,7 +158,7 @@ erDiagram
 
 ### Page 4 - Mortality & Recovery
 
-![Mortality Dashboard](4.jpg)
+![Mortality Dashboard](mortality_recovery.jpg)
 
 **Purpose:** Deep comparative analysis of mortality and recovery patterns.
 
@@ -170,7 +170,7 @@ erDiagram
 
 ### Page 5 - Insights & Recommendations
 
-![Insights Dashboard](5.jpg)
+![Insights Dashboard](insights.jpg)
 
 **Purpose:** Summarize findings and provide actionable recommendations.
 
@@ -241,3 +241,4 @@ The dashboard provides a template that can be adapted for any public health moni
 **Date:** June 2026  
 **Tool:** Microsoft Power BI Desktop  
 **Data Source:** Johns Hopkins CSSE (Kaggle UNCOVER Challenge)
+
